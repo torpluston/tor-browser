@@ -1,0 +1,27 @@
+{
+  "name": "Wikipedia (en)",
+  "description": "Wikipedia, the Free Encyclopedia",
+  "manifest_version": 2,
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "wikipedia@search.mozilla.org"
+    }
+  },
+  "hidden": true,
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "web_accessible_resources": [
+    "favicon.ico"
+  ],
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Wikipedia (en)",
+      "search_url": "https://en.wikipedia.org/wiki/Special:Search",
+      "search_form": "https://en.wikipedia.org/wiki/Special:Search?search={searchTerms}&sourceid=Mozilla-search",
+      "suggest_url": "https://en.wikipedia.org/w/api.php?action=opensearch&search={searchTerms}",
+      "search_url_get_params": "search={searchTerms}&sourceid=Mozilla-search"
+    }
+  }
+}

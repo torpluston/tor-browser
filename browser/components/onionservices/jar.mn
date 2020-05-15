@@ -1,0 +1,11 @@
+browser.jar:
+    content/browser/onionservices/authPreferences.css              (content/authPreferences.css)
+    content/browser/onionservices/authPreferences.js               (content/authPreferences.js)
+    content/browser/onionservices/authPrompt.js                    (content/authPrompt.js)
+    content/browser/onionservices/authUtil.jsm                     (content/authUtil.jsm)
+    content/browser/onionservices/netError/                        (content/netError/*)
+    content/browser/onionservices/onionservices.css                (content/onionservices.css)
+    content/browser/onionservices/savedKeysDialog.js               (content/savedKeysDialog.js)
+    content/browser/onionservices/savedKeysDialog.xul              (content/savedKeysDialog.xul)
+    content/browser/onionservices/onionlocationPreferences.js      (content/onionlocationPreferences.js)
+    content/browser/onionservices/onionlocation.svg                (content/onionlocation.svg)

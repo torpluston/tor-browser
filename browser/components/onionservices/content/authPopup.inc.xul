@@ -1,0 +1,16 @@
+# Copyright (c) 2020, The Tor Project, Inc.
+
+<popupnotification id="tor-clientauth-notification" hidden="true">
+  <popupnotificationcontent orient="vertical">
+    <description id="tor-clientauth-notification-desc"/>
+    <label id="tor-clientauth-notification-learnmore"
+           class="text-link popup-notification-learnmore-link"
+           is="text-link"/>
+    <html:div>
+      <html:input id="tor-clientauth-notification-key" type="password"/>
+      <html:div id="tor-clientauth-warning"/>
+      <checkbox id="tor-clientauth-persistkey-checkbox"
+                label="&torbutton.onionServices.authPrompt.persistCheckboxLabel;"/>
+    </html:div>
+  </popupnotificationcontent>
+</popupnotification>

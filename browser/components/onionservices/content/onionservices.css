@@ -1,0 +1,69 @@
+/* Copyright (c) 2020, The Tor Project, Inc. */
+
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+html|*#tor-clientauth-notification-onionname {
+  font-weight: bold;
+}
+
+html|*#tor-clientauth-notification-key {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 15px;
+  padding: 6px;
+}
+
+/* Start of rules adapted from
+ * browser/components/newtab/css/activity-stream-mac.css (linux and windows
+ * use the same rules).
+ */
+html|*#tor-clientauth-notification-key.invalid {
+  border: 1px solid #D70022;
+  box-shadow: 0 0 0 1px #D70022, 0 0 0 4px rgba(215, 0, 34, 0.3);
+}
+
+html|*#tor-clientauth-warning {
+  display: inline-block;
+  animation: fade-up-tt 450ms;
+  background: #D70022;
+  border-radius: 2px;
+  color: #FFF;
+  inset-inline-start: 3px;
+  padding: 5px 12px;
+  position: relative;
+  top: 6px;
+  z-index: 1;
+}
+
+html|*#tor-clientauth-warning[hidden] {
+  display: none;
+}
+
+html|*#tor-clientauth-warning::before {
+  background: #D70022;
+  bottom: -8px;
+  content: '.';
+  height: 16px;
+  inset-inline-start: 12px;
+  position: absolute;
+  text-indent: -999px;
+  top: -7px;
+  transform: rotate(45deg);
+  white-space: nowrap;
+  width: 16px;
+  z-index: -1;
+}
+
+@keyframes fade-up-tt {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* End of rules adapted from
+ * browser/components/newtab/css/activity-stream-mac.css
+ */

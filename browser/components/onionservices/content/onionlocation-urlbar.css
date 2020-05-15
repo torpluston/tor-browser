@@ -1,0 +1,27 @@
+/* Copyright (c) 2020, The Tor Project, Inc. */
+
+#onion-location-button {
+  list-style-image: url(chrome://browser/content/onionservices/onionlocation.svg);
+}
+
+#onion-location-box {
+  border-radius: 3px;
+  background-color: #6200A4;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  -moz-context-properties: fill;
+  fill: white;
+}
+
+#onion-location-box:hover {
+  background-color: #0060DF !important;
+}
+
+toolbar[brighttext] #onion-location-box {
+  background-color: #9400ff;
+}
+
+toolbar[brighttext] #onion-location-box:hover {
+  background-color: #0060DF !important;
+}

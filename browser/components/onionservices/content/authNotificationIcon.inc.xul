@@ -1,0 +1,6 @@
+# Copyright (c) 2020, The Tor Project, Inc.
+
+<image id="tor-clientauth-notification-icon"
+       class="notification-anchor-icon tor-clientauth-icon"
+       role="button"
+       tooltiptext="&torbutton.onionServices.authPrompt.tooltip;"/>

@@ -1,0 +1,20 @@
+# Copyright (c) 2020, The Tor Project, Inc.
+
+<groupbox id="torOnionServiceKeys" orient="vertical"
+          data-category="panePrivacy" hidden="true">
+  <label><html:h2 id="torOnionServiceKeys-header"/></label>
+  <hbox>
+    <description id="torOnionServiceKeys-overview-container" flex="1">
+      <html:span id="torOnionServiceKeys-overview"
+                 class="tail-with-learn-more"/>
+      <label id="torOnionServiceKeys-learnMore" class="learnMore text-link"
+             is="text-link"/>
+    </description>
+    <vbox align="end">
+      <button id="torOnionServiceKeys-savedKeys"
+              is="highlightable-button"
+              class="accessory-button"
+              oncommand="OnionServicesAuthPreferences.onViewSavedKeys()"/>
+    </vbox>
+  </hbox>
+</groupbox>

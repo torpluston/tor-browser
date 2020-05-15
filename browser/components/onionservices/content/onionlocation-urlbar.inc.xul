@@ -1,0 +1,10 @@
+# Copyright (c) 2020, The Tor Project, Inc.
+
+<hbox id="onion-location-box"
+      class="urlbar-icon-wrapper urlbar-page-action"
+      role="button"
+      hidden="true"
+      onclick="OnionLocationParent.buttonClick(event);">
+  <image id="onion-location-button" role="presentation"/>
+  <hbox id="onion-label-container"><label id="onion-label"/></hbox>
+</hbox>

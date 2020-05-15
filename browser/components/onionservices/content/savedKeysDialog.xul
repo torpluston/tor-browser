@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- Copyright (c) 2020, The Tor Project, Inc. -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/preferences.css" type="text/css"?>
+<?xml-stylesheet href="chrome://browser/content/onionservices/authPreferences.css" type="text/css"?>
+
+<window id="onionservices-savedkeys-dialog"
+    windowtype="OnionServices:SavedKeys"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    style="width: 45em;">
+
+  <script src="chrome://browser/content/onionservices/savedKeysDialog.js"/>
+
+  <vbox id="onionservices-savedkeys" class="contentPane" flex="1">
+    <label id="onionservices-savedkeys-intro"
+           control="onionservices-savedkeys-tree"/>
+    <separator class="thin"/>
+    <tree id="onionservices-savedkeys-tree" flex="1" hidecolumnpicker="true"
+          width="750"
+          style="height: 20em;"
+          onselect="gOnionServicesSavedKeysDialog.updateButtonsState();">
+      <treecols>
+        <treecol id="onionservices-savedkeys-siteCol" flex="1" persist="width"/>
+        <splitter class="tree-splitter"/>
+        <treecol id="onionservices-savedkeys-keyCol" flex="1" persist="width"/>
+      </treecols>
+      <treechildren/>
+    </tree>
+    <hbox id="onionservices-savedkeys-errorContainer" align="baseline" flex="1">
+      <image id="onionservices-savedkeys-errorIcon"/>
+      <description id="onionservices-savedkeys-errorMessage" flex="1"/>
+    </hbox>
+    <separator class="thin"/>
+    <hbox id="onionservices-savedkeys-buttons">
+      <button id="onionservices-savedkeys-remove" disabled="true"
+              oncommand="gOnionServicesSavedKeysDialog.deleteSelectedKeys();"/>
+      <button id="onionservices-savedkeys-removeall"
+              oncommand="gOnionServicesSavedKeysDialog.deleteAllKeys();"/>
+    </hbox>
+  </vbox>
+</window>

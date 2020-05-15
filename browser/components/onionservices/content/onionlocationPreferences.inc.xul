@@ -1,0 +1,11 @@
+# Copyright (c) 2020, The Tor Project, Inc.
+
+<groupbox id="onionServicesGroup" data-category="panePrivacy" data-subcategory="onionservices">
+  <label><html:h2 id="onionServicesTitle"></html:h2></label>
+  <label><label class="tail-with-learn-more" id="prioritizeOnionsDesc"></label><label
+  class="learnMore" is="text-link" id="onionServicesLearnMore"></label></label>
+  <radiogroup id="prioritizeOnionsRadioGroup" aria-labelledby="prioritizeOnionsDesc" preference="privacy.prioritizeonions.enabled">
+    <radio id="onionServicesRadioAlways" value="true"/>
+    <radio id="onionServicesRadioAsk" value="false"/>
+  </radiogroup>
+</groupbox>
