@@ -54,7 +54,7 @@
     "karma-webpack": "3.0.5",
     "loader-utils": "0.2.16",
     "minimist": "1.2.0",
-    "mocha": "6.1.4",
+    "mocha": "10.2.0",
     "mock-raf": "1.0.1",
     "node-fetch": "2.5.0",
     "node-sass": "4.12.0",
